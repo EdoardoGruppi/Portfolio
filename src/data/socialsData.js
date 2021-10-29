@@ -11,4 +11,5 @@ export const socialsData = {
   //   stackOverflow: "https://stackoverflow.com/users/",
   //   gitlab: "https://gitlab.com/",
   //   youtube: "https://youtube.com/",
+  gmail: "mailto:edoardogruppi@gmail.com",
 };

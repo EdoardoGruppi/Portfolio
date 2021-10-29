@@ -29,12 +29,12 @@ function Main() {
       <Landing />
       <About />
       <Education />
-      <Skills />
       <Experience />
       <Projects />
       <Achievement />
-      <Services />
-      <Testimonials />
+      {/* <Services />
+      <Testimonials /> */}
+      <Skills />
       <Blog />
       <Contacts />
       <Footer />
