@@ -7,13 +7,13 @@ import {
   Landing,
   About,
   Skills,
-  Testimonials,
-  Blog,
+  // Testimonials,
+  // Blog,
   Education,
-  Experience,
+  // Experience,
   Contacts,
   Projects,
-  Services,
+  // Services,
   Achievement,
 } from "../../components";
 import { headerData } from "../../data/headerData";
@@ -29,13 +29,13 @@ function Main() {
       <Landing />
       <About />
       <Education />
-      <Experience />
+      {/* <Experience /> */}
       <Projects />
       <Achievement />
       {/* <Services />
       <Testimonials /> */}
       <Skills />
-      <Blog />
+      {/* <Blog /> */}
       <Contacts />
       <Footer />
     </div>
