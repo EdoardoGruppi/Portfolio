@@ -6,7 +6,7 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 import { projectsData } from "../../data/projectsData";
 import { HiArrowRight } from "react-icons/hi";
 
-import "./Projects.css";
+import "./IndependentProjects.css";
 import SingleProject from "./SingleProject/SingleProject";
 
 function IndependentProjects() {
