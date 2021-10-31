@@ -1,45 +1,13 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
-import { makeStyles } from "@material-ui/core/styles";
 
 import { ThemeContext } from "../../contexts/ThemeContext";
-import { projectsData } from "../../data/projectsData";
-import { HiArrowRight } from "react-icons/hi";
+import { projectsData } from "../../data/indProjectsData";
 
 import "./IndependentProjects.css";
-import SingleProject from "./SingleProject/SingleProject";
+import SingleProject from "./SingleProject/IndProject";
 
 function IndependentProjects() {
   const { theme } = useContext(ThemeContext);
-
-  const useStyles = makeStyles(() => ({
-    viewAllBtn: {
-      color: theme.tertiary,
-      backgroundColor: theme.primary,
-      transition: "color 0.2s",
-      "&:hover": {
-        color: theme.secondary,
-        backgroundColor: theme.primary,
-      },
-    },
-    viewArr: {
-      color: theme.tertiary,
-      backgroundColor: theme.secondary70,
-      width: "40px",
-      height: "40px",
-      padding: "0.5rem",
-      fontSize: "1.05rem",
-      borderRadius: "50%",
-      cursor: "pointer",
-      transition: "background-color 0.2s",
-      "&:hover": {
-        color: theme.tertiary,
-        backgroundColor: theme.secondary,
-      },
-    },
-  }));
-
-  const classes = useStyles();
 
   return (
     <>
@@ -50,11 +18,11 @@ function IndependentProjects() {
           style={{ backgroundColor: theme.secondary }}
         >
           <div className="projects--header">
-            <h1 style={{ color: theme.primary }}>Projects</h1>
+            <h1 style={{ color: theme.primary }}>Independent Projects</h1>
           </div>
           <div className="projects--body">
-            <div className="projects--bodyContainer">
-              {projectsData.slice(0, 3).map((project) => (
+            <div className="projects--newBodyContainer">
+              {projectsData.map((project) => (
                 <SingleProject
                   theme={theme}
                   key={project.id}
@@ -68,17 +36,6 @@ function IndependentProjects() {
                 />
               ))}
             </div>
-
-            {projectsData.length > 3 && (
-              <div className="projects--viewAll">
-                <Link to="/projects">
-                  <button className={classes.viewAllBtn}>
-                    View All
-                    <HiArrowRight className={classes.viewArr} />
-                  </button>
-                </Link>
-              </div>
-            )}
           </div>
         </div>
       )}
