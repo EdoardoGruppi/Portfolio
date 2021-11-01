@@ -1,7 +1,7 @@
-import one from "../assets/svg/projects/one.svg";
-import two from "../assets/svg/projects/two.svg";
-import three from "../assets/svg/projects/three.svg";
-import four from "../assets/svg/projects/four.svg";
+// import one from "../assets/svg/projects/one.svg";
+// import two from "../assets/svg/projects/two.svg";
+// import three from "../assets/svg/projects/three.svg";
+// import four from "../assets/svg/projects/four.svg";
 
 export const projectsData = [
   {
@@ -12,7 +12,8 @@ export const projectsData = [
     tags: ["JavaScript", "ReactJS", "CSS"],
     code: "https://github.com/EdoardoGruppi/Movie_Trailers",
     demo: "https://edoardogruppi.github.io/Movie_Trailers/#/",
-    image: one,
+    image:
+      "https://user-images.githubusercontent.com/48513387/139677878-37ae2b4f-2489-4843-8cad-37b8012df9bb.gif",
   },
   {
     id: 2,
@@ -22,7 +23,8 @@ export const projectsData = [
     tags: ["JavaScript", "ReactJS", "CSS"],
     code: "https://github.com/EdoardoGruppi/Path_Finding_Visualizer",
     demo: "https://edoardogruppi.github.io/Path_Finding_Visualizer/",
-    image: two,
+    image:
+      "https://user-images.githubusercontent.com/48513387/132551697-96438e8f-ce6e-47bd-b625-fae38871a134.gif",
   },
   {
     id: 3,
@@ -32,7 +34,8 @@ export const projectsData = [
     tags: ["JavaScript", "ReactJS", "CSS"],
     code: "https://github.com/EdoardoGruppi/Sorting_Algorithms_Visualizer",
     demo: "https://edoardogruppi.github.io/Sorting_Algorithms_Visualizer/",
-    image: three,
+    image:
+      "https://user-images.githubusercontent.com/48513387/132096886-82785bb4-57a7-4de2-bbd2-77ed1902e3d5.gif",
   },
   {
     id: 4,
@@ -42,7 +45,8 @@ export const projectsData = [
     tags: ["Python", "PyGame"],
     code: "https://github.com/EdoardoGruppi/Sudoker",
     demo: "https://github.com/EdoardoGruppi/Sudoker",
-    image: four,
+    image:
+      "https://user-images.githubusercontent.com/48513387/131258153-7be05535-b76b-49a0-8445-a65087999ffe.gif",
   },
 ];
 
@@ -57,6 +61,6 @@ export const projectsData = [
     tags: ['Flutter', 'React'],
     code: '',
     demo: '',
-    image: ''
+    image: four
 }, 
 */

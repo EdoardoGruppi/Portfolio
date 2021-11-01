@@ -47,7 +47,11 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
           >
             {name}
           </h2>
-          <img src={image ? image : placeholder} alt={name} />
+          <img
+            src={image ? image : placeholder}
+            alt={name}
+            style={{ height: `68%`, width: "auto", borderRadius: `10px` }}
+          />
           <div className="project--showcaseBtn">
             <a
               href={demo}
