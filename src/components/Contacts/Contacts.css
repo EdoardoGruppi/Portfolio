@@ -84,7 +84,7 @@
   font-size: 15px;
 }
 
-.submit-btn button {
+.submit-btn div {
   border: none;
   outline: none;
   width: 140px;
@@ -98,8 +98,9 @@
   cursor: pointer;
 }
 
-.submit-btn button p {
-  font-size: 16px;
+.submit-btn div p {
+  margin-left: 25px;
+  font-size: 18px;
   font-family: var(--primaryFont);
 }
 

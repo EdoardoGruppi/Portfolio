@@ -1,8 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Snackbar, IconButton, SnackbarContent } from "@material-ui/core";
-import CloseIcon from "@material-ui/icons/Close";
-import axios from "axios";
-import isEmail from "validator/lib/isEmail";
+
 import { makeStyles } from "@material-ui/core/styles";
 import {
   FaTwitter,
@@ -18,7 +15,7 @@ import {
   FaGitlab,
   FaMediumM,
 } from "react-icons/fa";
-import { AiOutlineSend, AiOutlineCheckCircle } from "react-icons/ai";
+import { AiOutlineSend } from "react-icons/ai";
 import { FiPhone, FiAtSign } from "react-icons/fi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { ThemeContext } from "../../contexts/ThemeContext";
@@ -27,24 +24,10 @@ import { contactsData } from "../../data/contactsData";
 import "./Contacts.css";
 
 function Contacts() {
-  const [open, setOpen] = useState(false);
-
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-
-  const [success, setSuccess] = useState(false);
-  const [errMsg, setErrMsg] = useState("");
-
   const { theme } = useContext(ThemeContext);
-
-  const handleClose = (event, reason) => {
-    if (reason === "clickaway") {
-      return;
-    }
-
-    setOpen(false);
-  };
 
   const useStyles = makeStyles((t) => ({
     input: {
@@ -128,37 +111,6 @@ function Contacts() {
 
   const classes = useStyles();
 
-  const handleContactForm = (e) => {
-    e.preventDefault();
-
-    if (name && email && message) {
-      if (isEmail(email)) {
-        const responseData = {
-          name: name,
-          email: email,
-          message: message,
-        };
-
-        axios.post(contactsData.sheetAPI, responseData).then((res) => {
-          console.log("success");
-          setSuccess(true);
-          setErrMsg("");
-
-          setName("");
-          setEmail("");
-          setMessage("");
-          setOpen(false);
-        });
-      } else {
-        setErrMsg("Invalid email");
-        setOpen(true);
-      }
-    } else {
-      setErrMsg("Enter all the fields");
-      setOpen(true);
-    }
-  };
-
   return (
     <div
       className="contacts"
@@ -169,7 +121,7 @@ function Contacts() {
         <h1 style={{ color: theme.primary }}>Contacts</h1>
         <div className="contacts-body">
           <div className="contacts-form">
-            <form onSubmit={handleContactForm}>
+            <form>
               <div className="input-container">
                 <label htmlFor="Name" className={classes.label}>
                   Name
@@ -179,20 +131,18 @@ function Contacts() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   type="text"
-                  name="Name"
                   className={`form-input ${classes.input}`}
                 />
               </div>
               <div className="input-container">
-                <label htmlFor="Email" className={classes.label}>
-                  Email
+                <label htmlFor="Subject" className={classes.label}>
+                  Subject
                 </label>
                 <input
-                  placeholder="JaneDoe@gmail.com"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  type="email"
-                  name="Email"
+                  placeholder="Type the subject..."
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
+                  type="text"
                   className={`form-input ${classes.input}`}
                 />
               </div>
@@ -205,70 +155,42 @@ function Contacts() {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   type="text"
-                  name="Message"
                   className={`form-message ${classes.message}`}
                 />
               </div>
 
               <div className="submit-btn">
-                <button type="submit" className={classes.submitBtn}>
-                  <p>{!success ? "Send" : "Sent"}</p>
-                  <div className="submit-icon">
-                    <AiOutlineSend
-                      className="send-icon"
-                      style={{
-                        animation: !success
-                          ? "initial"
-                          : "fly 0.8s linear both",
-                        position: success ? "absolute" : "initial",
-                      }}
-                    />
-                    <AiOutlineCheckCircle
-                      className="success-icon"
-                      style={{
-                        display: !success ? "none" : "inline-flex",
-                        opacity: !success ? "0" : "1",
-                      }}
-                    />
+                <a
+                  href={`https://mail.google.com/mail/?ui=2&view=cm&fs=1&tf=1&to=${
+                    contactsData.email
+                  }&body=${message.replace(/\n|\r\n|\r/g, "%0a")}&su=${
+                    name.toUpperCase() + " - " + subject
+                  }`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className={classes.submitBtn}>
+                    <p>{"Send"}</p>
+                    <div className="submit-icon">
+                      <AiOutlineSend
+                        className="send-icon"
+                        style={{
+                          animation: "initial",
+                          position: "absolute",
+                        }}
+                      />
+                    </div>
                   </div>
-                </button>
+                </a>
               </div>
             </form>
-            <Snackbar
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "center",
-              }}
-              open={open}
-              autoHideDuration={4000}
-              onClose={handleClose}
-            >
-              <SnackbarContent
-                action={
-                  <React.Fragment>
-                    <IconButton
-                      size="small"
-                      aria-label="close"
-                      color="inherit"
-                      onClick={handleClose}
-                    >
-                      <CloseIcon fontSize="small" />
-                    </IconButton>
-                  </React.Fragment>
-                }
-                style={{
-                  backgroundColor: theme.primary,
-                  color: theme.secondary,
-                  fontFamily: "var(--primaryFont)",
-                }}
-                message={errMsg}
-              />
-            </Snackbar>
           </div>
 
           <div className="contacts-details">
             <a
               href={`mailto:${contactsData.email}`}
+              target="_blank"
+              rel="noreferrer"
               className="personal-details"
             >
               <div className={classes.detailsIcon}>
