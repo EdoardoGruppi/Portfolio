@@ -5,7 +5,7 @@ export const headerData = {
   name: "Edoardo Gruppi",
   title: "Software Engineer",
   desciption:
-    "There wasn't a bird in the sky, but that was not what caught her attention. It was the clouds.",
+    "The good life is a process, not a state of being. It is a direction not a destination.",
   image: profileImage,
   resumePdf: resume,
 };
