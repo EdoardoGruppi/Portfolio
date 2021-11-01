@@ -1,8 +1,8 @@
 import one from "../assets/svg/projects/one.svg";
 import two from "../assets/svg/projects/two.svg";
-import three from "../assets/svg/projects/three.svg";
+import three from "../assets/svg/projects/six.svg";
 import four from "../assets/svg/projects/four.svg";
-import five from "../assets/svg/projects/five.svg";
+import five from "../assets/svg/projects/seven.svg";
 
 export const projectsData = [
   {
