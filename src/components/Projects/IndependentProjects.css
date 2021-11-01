@@ -19,6 +19,9 @@
     width: 80%;
     margin-right: -3rem;
   }
+  .ind-header {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 800px) {

@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { FaPlay, FaCode } from "react-icons/fa";
 import Fade from "react-reveal/Fade";
+import "./IndProject.css";
 
 import placeholder from "../../../assets/png/placeholder.png";
 
@@ -37,8 +38,8 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
     <Fade bottom>
       <div
         key={id}
-        className="singleProject"
-        style={{ backgroundColor: theme.primary400, width: `530px` }}
+        className="singleProject ind-content"
+        style={{ backgroundColor: theme.primary400 }}
       >
         <div className="projectContent">
           <h2

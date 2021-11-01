@@ -17,7 +17,7 @@ function IndependentProjects() {
           id="projects"
           style={{ backgroundColor: theme.secondary }}
         >
-          <div className="projects--header">
+          <div className="projects--header ind-header">
             <h1 style={{ color: theme.primary }}>Independent Projects</h1>
           </div>
           <div className="projects--body">
