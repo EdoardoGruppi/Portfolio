@@ -31,7 +31,7 @@ export const educationData = [
     id: 5,
     institution: "Scientific High School G.D.Cassini",
     course: "Higher Secondary Education",
-    startYear: "2019",
-    endYear: "Present",
+    startYear: "2012",
+    endYear: "2017",
   },
 ];
