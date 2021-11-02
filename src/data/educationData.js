@@ -18,7 +18,7 @@ export const educationData = [
     institution: "ISSUGE Institute of Excellence",
     course: "Genoa University Superior School",
     startYear: "2018",
-    endYear: "2019",
+    endYear: "2020",
   },
   {
     id: 4,
