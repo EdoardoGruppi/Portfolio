@@ -1,3 +1,6 @@
+import Duolingo from "../assets/png/Duolingo.jpg";
+import Leonardo from "../assets/png/Leonardo.jpg";
+
 export const achievementData = {
   bio: "",
   achievements: [
@@ -8,8 +11,7 @@ export const achievementData = {
         "A prototype vehicle was created to autonomously intervene in critical infrastructural emergencies, releasing first-aid kits whenever humans are recognised.",
       date: "November, 2019",
       field: "Hackathon",
-      image:
-        "https://www.leonardocompany.com/o/adaptive-media/image/9372075/w_1120/810_2707.jpg",
+      image: Leonardo,
     },
     {
       id: 2,
@@ -17,8 +19,7 @@ export const achievementData = {
       details: "Exam passed with an overall result of 120 out of 160.",
       date: "September, 2020",
       field: "Assessment",
-      image:
-        "https://www.fillered.com/wp-content/uploads/2021/08/Image-of-duolingo-english-test.png",
+      image: Duolingo,
     },
   ],
 };
