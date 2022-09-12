@@ -549,12 +549,14 @@
             </ul>
           </div>
 
-          <form action="mailto:edoardogruppi@gmail.com" method="POST" enctype="text/plain" class="contact-form">
-            <input type="text" name="name" aria-label="name" placeholder="Name" required class="input-field">
-            <input type="email" name="email_address" aria-label="email" placeholder="Email" required
+          <form action='' id='form_id' class="contact-form">
+            <input type="text" id="f_name" aria-label="name" placeholder="Name" required class="input-field">
+            <input type="email" id="f_email_address" aria-label="email" placeholder="Email" required
               class="input-field">
-            <textarea name="message" aria-label="message" placeholder="Message" required class="input-field"></textarea>
-            <button type="submit" value="Send" class="submit-btn">
+            <input type="subject" id="f_subject" aria-label="subject" placeholder="Subject" required
+              class="input-field">
+            <textarea id="f_message" aria-label="message" placeholder="Message" required class="input-field"></textarea>
+            <button class="submit-btn" submit-button>
               <span class="span">Submit</span>
               <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
             </button>
