@@ -64,7 +64,7 @@ const submitButton = document.querySelector("[submit-button]");
 
 const sendEmail = function () {
   let name = document.getElementById("f_name").value.toUpperCase();
-  let address = document.getElementById("f_email_address").value;
+  let address = "edoardogruppi@gmail.com";
   let message = document.getElementById("f_message").value.replace(/\n|\r\n|\r/g,"%0a");
   let subject = name + '-' + document.getElementById("f_subject").value;
   let link = "https://mail.google.com/mail/?ui=2&view=cm&fs=1&tf=1&to=" + address + "&body=" + message + "&su=" + subject
