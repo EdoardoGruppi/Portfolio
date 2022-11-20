@@ -45,6 +45,7 @@
   --fs-35: 3.5rem;
   --fs-30: 3rem;
   --fs-25: 2.5rem;
+  --fs-21: 2.1rem;
   --fs-18: 1.8rem;
   --fs-17: 1.7rem;
   --fs-13: 1.3rem;
@@ -517,59 +518,46 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--cultured);
 }
 
-
 /*-----------------------------------*\
-  #PRICEING
+  #NEW FORMAT
 \*-----------------------------------*/
 
-.pricing { background-color: var(--cultured); }
-
-.pricing .section-text { margin-block-end: 60px; }
-
-.pricing-list {
-  display: grid;
-  gap: 30px;
+.entire-wide{
+  grid-row: 1/2;
+  grid-column:2/4;
+  margin-bottom: 8px;
 }
 
-  
-
-.pricing-card {
-  --color: var(--black);
-  --icon-color: var(--theme-color);
-
-  background-color: var(--white);
-  border-radius: var(--radius-10);
-  box-shadow: var(--shadow);
-  line-height: 1.2;
-  padding: 30px;
-  transition: var(--transition);
+.new-item-title { 
+  color: var(--black); 
+  font-weight: var(--fw-800);
+  font-size: var(--fs-21);
 }
 
-.pricing-card ion-icon {
-  color: var(--icon-color);
-  flex-shrink: 0;
-  font-size: 25px;
-  transition: var(--transition);
+.new-item-address{
+  font-size: var(--fs-18);
+  margin-bottom: 30px;
 }
 
-.pricing-card .card-title {
-  color: var(--color);
-  font: unset;
-  font-family: var(--ff-poppins);
-  margin-block: 14px 10px;
-  transition: var(--transition);
+.new-list-link-timeline {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  font-style: normal;
+  font-size: 18px;
+  padding-block: 6px;
+  margin-bottom: -2px;
 }
 
-.pricing-card .card-price {
-  color: var(--color);
-  font-family: var(--ff-poppins);
-  transition: var(--transition);
+.new-item-bullet{
+  font-size: var(--fs-18);
+  line-height: 1.6;
 }
 
-.pricing-card:is(:hover, :focus-within) {
-  background-color: var(--theme-color);
-  --color: var(--white);
-  --icon-color: var(--white);
+.new-icon-list{
+  min-width:16px;
+  font-size: 16px;
 }
 
 
@@ -669,8 +657,9 @@ body::-webkit-scrollbar-thumb {
 
 .input-field {
   color: var(--black);
+  font-family: inherit;
   font-style: normal;
-  font-size: 15px;
+  font-size: 15.5px;
   letter-spacing: 1.4px;
   border: 1px solid var(--black_10);
   padding: 10px;
