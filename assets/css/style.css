@@ -624,9 +624,9 @@ body::-webkit-scrollbar-thumb {
 
 .contact { background-color: var(--cultured); }
 
-.contact-list { margin-block: 40px 50px; }
+.contact-list { margin-block: 20px 20px; }
 
-.contact-item:not(:last-child) { margin-block-end: 22px; }
+.contact-item:not(:last-child) { margin-block-end: 10px; }
 
 .contact-item {
   display: flex;
@@ -1022,7 +1022,7 @@ textarea.input-field {
     top: 0;
     right: 50px;
     width: 410px;
-    height: 620px;
+    height: 700px;
     background-image: url('../images/portfolio-2.jpg');
     background-repeat: no-repeat;
     background-size: contain;

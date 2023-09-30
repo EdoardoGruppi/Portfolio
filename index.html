@@ -1,662 +1,1213 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gruppi - Software & Machine Learning Engineer</title>
 
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gruppi - Software & Machine Learning Engineer</title>
-
-  <!-- 
+    <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="https://user-images.githubusercontent.com/48513387/189550544-f9ce1bf2-cef7-42df-a1c0-3645d9bb23ec.png" type="image/png">
+    <link
+      rel="shortcut icon"
+      href="https://user-images.githubusercontent.com/48513387/189550544-f9ce1bf2-cef7-42df-a1c0-3645d9bb23ec.png"
+      type="image/png"
+    />
 
-  <!-- 
+    <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- 
+    <!-- 
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- 
+    <!-- 
     - preload images
   -->
-  <link rel="preload" as="image" href="https://user-images.githubusercontent.com/48513387/189478918-bf233e9b-3544-48a8-b399-3680fad0052f.jpg">
+    <link
+      rel="preload"
+      as="image"
+      href="https://user-images.githubusercontent.com/48513387/189478918-bf233e9b-3544-48a8-b399-3680fad0052f.jpg"
+    />
+  </head>
 
-</head>
-
-<body>
-
-  <!-- 
+  <body>
+    <!-- 
     - #HEADER
   -->
 
-  <header class="header" data-header>
-    <div class="container">
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">Gruppi</a>
 
-      <a href="#" class="logo">Gruppi</a>
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>Home</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="navbar-link" data-nav-link
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
+            </li>
+            <li>
+              <a href="#working" class="navbar-link" data-nav-link
+                >Working Experience</a
+              >
+            </li>
+            <li>
+              <a href="#education" class="navbar-link" data-nav-link
+                >Education</a
+              >
+            </li>
+            <li>
+              <a href="#awards" class="navbar-link" data-nav-link>Awards</a>
+            </li>
+            <li>
+              <a href="#publications" class="navbar-link" data-nav-link
+                >Publications</a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="navbar-link" data-nav-link
+                >Independent Projects</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+            </li>
+          </ul>
+        </nav>
 
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
-          <li>
-            <a href="#" class="navbar-link" data-nav-link>Home</a>
-          </li>
-          <li>
-            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
-          </li>
-          <li>
-            <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
-          </li>
-          <li>
-            <a href="#working" class="navbar-link" data-nav-link>Working Experience</a>
-          </li>
-          <li>
-            <a href="#education" class="navbar-link" data-nav-link>Education</a>
-          </li>
-          <li>
-            <a href="#projects" class="navbar-link" data-nav-link>Independent Projects</a>
-          </li>
-          <li>
-            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
-          </li>
-        </ul>
-      </nav>
+        <button
+          class="nav-toggle-btn"
+          aria-label="toggle menu"
+          data-nav-toggler
+        >
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+      </div>
+    </header>
 
-      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
-        <span class="line line-1"></span>
-        <span class="line line-2"></span>
-        <span class="line line-3"></span>
-      </button>
-
-    </div>
-  </header>
-
-  <main>
-    <article>
-
-      <!-- 
+    <main>
+      <article>
+        <!-- 
         - #HERO
       -->
 
-      <section class="section hero" id="" aria-label="hero">
-        <div class="container">
-          <figure class="hero-banner img-holder has-before" style="--width: 640; --height: 840;">
-            <img src="https://user-images.githubusercontent.com/48513387/189478918-bf233e9b-3544-48a8-b399-3680fad0052f.jpg" width="640" height="840" alt="Edoardo Gruppi" class="img-cover">
-          </figure>
-          <div class="hero-content">
-            <p class="section-subtitle">Edoardo Gruppi</p>
-            <h1 class="h1 hero-title">Software & Machine Learning Engineer</h1>
-            <ul class="hero-list">
+        <section class="section hero" id="" aria-label="hero">
+          <div class="container">
+            <figure
+              class="hero-banner img-holder has-before"
+              style="--width: 640; --height: 840"
+            >
+              <img
+                src="https://user-images.githubusercontent.com/48513387/189478918-bf233e9b-3544-48a8-b399-3680fad0052f.jpg"
+                width="640"
+                height="840"
+                alt="Edoardo Gruppi"
+                class="img-cover"
+              />
+            </figure>
+            <div class="hero-content">
+              <p class="section-subtitle">Edoardo Gruppi</p>
+              <h1 class="h1 hero-title">
+                Software & Machine Learning Engineer
+              </h1>
+              <ul class="hero-list">
+                <li>
+                  <a href="#working" class="list-link">
+                    <span class="span">Working Experience</span>
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </li>
 
-              <li>
-                <a href="#working" class="list-link">
-                  <span class="span">Working Experience</span>
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
-              </li>
+                <li>
+                  <a href="#education" class="list-link">
+                    <span class="span">Education</span>
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </li>
 
-              <li>
-                <a href="#education" class="list-link">
-                  <span class="span">Education</span>
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
-              </li>
+                <li>
+                  <a href="#awards" class="list-link">
+                    <span class="span">Awards</span>
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </li>
 
-              <li>
-                <a href="https://github.com/EdoardoGruppi/Portfolio/files/10102863/Edoardo_Gruppi_Resume.pdf" download="resume" target="_blank" rel="noreferrer" class="list-link">
-                  <span class="span">Download Resume</span>
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
-              </li>
+                <li>
+                  <a href="#publications" class="list-link">
+                    <span class="span">Publications</span>
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </li>
 
-            </ul>
-            <ul class="exp-list">
-              <li class="list-item">
-                <strong class="strong">0-1</strong>
-                <span class="span">
-                  Years of<br>
-                  Working<br>
-                  Experience
-                </span>
-              </li>
+                <li>
+                  <a
+                    href="https://github.com/EdoardoGruppi/IoT_Assignment/files/12774558/Edoardo_Gruppi_CV.pdf"
+                    download="resume"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="list-link"
+                  >
+                    <span class="span">Download Resume</span>
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </li>
+              </ul>
+              <ul class="exp-list">
+                <li class="list-item">
+                  <strong class="strong">1+</strong>
+                  <span class="span">
+                    Years of<br />
+                    Working<br />
+                    Experience
+                  </span>
+                </li>
 
-              <li class="list-item">
-                <strong class="strong">4+</strong>
+                <li class="list-item">
+                  <strong class="strong">4+</strong>
 
-                <span class="span">
-                  Years of<br>
-                  Software<br>
-                  Development
-                </span>
-              </li>
-
-            </ul>
-            <a href="#portfolio" class="slide-down-btn" aria-label="scroll down">
-              <ion-icon name="arrow-down" aria-hidden="true"></ion-icon>
-            </a>
+                  <span class="span">
+                    Years of<br />
+                    Software<br />
+                    Development
+                  </span>
+                </li>
+              </ul>
+              <a
+                href="#portfolio"
+                class="slide-down-btn"
+                aria-label="scroll down"
+              >
+                <ion-icon name="arrow-down" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- 
+        <!-- 
         - #PORTFOLIO
       -->
 
-      <section class="section portfolio" id="portfolio" aria-label="portfolio">
-        <div class="container">
-          <p class="section-subtitle">Portfolio</p>
-          <h2 class="h2 section-title">Relevant Projects</h2>
-          <ul class="has-scrollbar">
-
-            <li class="scrollbar-item">
-              <div class="card">
-                <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
-                  <img src="https://images.unsplash.com/photo-1614846027182-cecfee3a427b?auto=format&w=600" width="600" height="675" loading="lazy" alt="IoT Image"
-                    class="img-cover">
-                </figure>
-                <a href="https://github.com/EdoardoGruppi/IoT_Assignment" target="_blank" class="card-content">
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  <h3 class="h3 card-title">IoT</h3>
-                  <p class="card-text">Smart Home System</p>
-                </a>
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="card">
-                <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
-                  <img src="https://images.unsplash.com/photo-1662731969605-05179bf7653b?auto=format&w=600" width="600" height="675" loading="lazy" alt="Leo Dandora"
-                    class="img-cover">
-                </figure>
-                <a href="https://github.com/EdoardoGruppi/AMLS_II_assignment20_21" target="_blank" class="card-content">
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  <h3 class="h3 card-title">Applied ML II</h3>
-                  <p class="card-text">Image Enhancement</p>
-                </a>
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="card">
-                <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
-                  <img src="https://images.unsplash.com/photo-1604164448130-d1df213c64eb?auto=format&w=600" width="600" height="675" loading="lazy" alt="Leo Dandora"
-                    class="img-cover">
-                </figure>
-                <a href="https://edoardogruppi.wixsite.com/self-driving" target="_blank" class="card-content">
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  <h3 class="h3 card-title">Emerging Topics</h3>
-                  <p class="card-text">Self-driving Blog</p>
-                </a>
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="card">
-                <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
-                  <img src="https://images.unsplash.com/photo-1509281373149-e957c6296406?auto=format&w=600" width="600" height="675" loading="lazy" alt="Leo Dandora"
-                    class="img-cover">
-                </figure>
-                <a href="https://github.com/EdoardoGruppi/AMLS_assignment20_21" target="_blank" class="card-content">
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  <h3 class="h3 card-title">Applied ML I</h3>
-                  <p class="card-text">Object Detection</p>
-                </a>
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="card">
-                <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
-                  <img src="https://images.unsplash.com/photo-1621264448270-9ef00e88a935?auto=format&w=600" width="600" height="675" loading="lazy" alt="Leo Dandora"
-                    class="img-cover">
-                </figure>
-                <a href="https://github.com/EdoardoGruppi/DAPS_assignment" target="_blank" class="card-content">
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  <h3 class="h3 card-title">Data Processing</h3>
-                  <p class="card-text">Stock Forecasting</p>
-                </a>
-              </div>
-            </li>
-          </ul>
-
-        </div>
-      </section>
-
-
-      <!-- 
-        - #SKILLS
-      -->
-
-      <section class="section skills has-before" id="skills" aria-label="skills"
-        style="background-image: url('./assets/images/skills-bg.png')">
-        <div class="container">
-          <div class="skills-content">
-            <p class="section-subtitle">Skills</p>
-            <h2 class="h2 section-title">Programming Skills</h2>
-
-            <div class="row">
-              <div class="column">
-                <img src="https://user-images.githubusercontent.com/48513387/189545452-25f717cf-6292-4ad2-84c4-a0101e045b92.png" alt="Python" class="image-skill">
-                <img src="https://user-images.githubusercontent.com/48513387/189547166-0c851752-3b56-4585-8a54-dfd48a9ee52c.png" alt="C#" class="image-skill">
-                <img src="https://user-images.githubusercontent.com/48513387/189547224-729131cd-7cfb-43aa-878b-1769429cc6df.png" alt="MarkDown" class="image-skill change-my-color">
-                <img src="https://user-images.githubusercontent.com/48513387/189547235-22efafd8-3474-4166-b640-f96686894977.png" alt="Java" class="image-skill">
-              </div>
-              <div class="column">
-                <img src="https://user-images.githubusercontent.com/48513387/189546425-8e23e5ce-1afb-42cf-8fbe-186c790975c6.png" alt="JavaScript" class="image-skill">
-                <img src="https://user-images.githubusercontent.com/48513387/189547323-a925274d-deea-42be-8711-bc821a34bfe7.png" alt="MatLaB" class="image-skill">
-                <img src="https://user-images.githubusercontent.com/48513387/189547294-17b8e4c6-7931-4fb5-85c1-c31800516c34.png" alt="NodeJS" class="image-skill">
-                <img src="https://user-images.githubusercontent.com/48513387/189547391-7a0ab20b-cd52-4d53-94e9-119f7ae2f775.png" alt="SQL" class="image-skill">
-              </div>
-              <div class="column">
-                <img src="https://user-images.githubusercontent.com/48513387/189546246-2b6bc732-80d3-484a-86dd-1b205e3f77eb.png" alt="MongoDB" class="image-skill">
-                <img src="https://user-images.githubusercontent.com/48513387/189547185-d736d668-ebc9-41d4-9b17-ebf95132e187.png" alt="CSS" class="image-skill">
-                <img src="https://user-images.githubusercontent.com/48513387/189547308-2b5c3863-fdd8-4f78-a45c-fb659970ddcf.png" alt="React" class="image-skill">
-              </div>
-              <div class="column">
-                <img src="https://user-images.githubusercontent.com/48513387/189547147-8b62c4d5-d857-47dd-a285-7d79df1b5e78.png" alt="C" class="image-skill">
-                <img src="https://user-images.githubusercontent.com/48513387/189547265-746a30dd-53e9-46ba-ab5c-9bbf514d4cab.png" alt="HTML" class="image-skill">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" alt="Latex" class="image-skill change-my-color">
-              </div>
-            </div>
-
-          </div>
-          <div class="skills-banner has-before"></div>
-        </div>
-      </section>
-
-
-      <!-- 
-        - #TIMELINE
-      -->
-
-      <section class="section timeline" id="working" aria-label="timeline">
-        <div class="container">
-          <p class="section-subtitle">Timeline</p>
-          <h2 class="h2 section-title">Working Period</h2>
-          <ul class="timeline-list">
-
-            <li class="timeline-item">
-              <h3 class="item-period">May, 2022 - October, 2022</h3>
-              <div class="entire-wide">
-                <p class="new-item-title">Research Assistant</p>
-                <p class="new-item-address">University College London, London</p>
-                <ul>
-                  <li>     
-                    <div href='#' class="new-list-link-timeline">     
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true" class="new-icon-list"></ion-icon>    
-                      <p class="new-item-bullet">Industrial project in collaboration with BBC and at BBC.</p>
-                    </div>
-                  </li>
-                  <li>     
-                    <div href='#' class="new-list-link-timeline">     
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true" class="new-icon-list"></ion-icon>    
-                      <p class="new-item-bullet">Pre-processed information collected by BBC to reduce reidentification risks and privacy concerns without losing data utility.</p>
-                    </div>
-                  </li>
-                  <li>     
-                    <div href='#' class="new-list-link-timeline">     
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true" class="new-icon-list"></ion-icon>    
-                      <p class="new-item-bullet">Created samples exploited by a few UCL BEng students for their thesis and identified optimal metrics to assess proposed Recommendation Systems.</p>
-                    </div>
-                  </li>
-                  <li>     
-                    <div href='#' class="new-list-link-timeline">     
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true" class="new-icon-list"></ion-icon>    
-                      <p class="new-item-bullet">Started a path that may potentially lead to the release of the dataset in academic environments and to the development of public engagement through challenges and events.</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="timeline-item">
-              <h3 class="item-period">November, 2021</h3>
-              <div class="entire-wide">
-                <p class="new-item-title">Leonardo Innovathon Hackathon</p>
-                <p class="new-item-address">2nd Place, Rome</p>
-                <ul>
-                  <li>     
-                    <div href='#' class="new-list-link-timeline">     
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true" class="icon-list"></ion-icon>    
-                      <p class="new-item-bullet">A prototype miniature vehicle was created to autonomously intervene in critical infrastructural emergencies, releasing first-aid kits whenever human profiles are recognised.</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <!-- <li class="timeline-item">
-              <h3 class="item-period">May, 2022 - October, 2022</h3>
-              <p class="item-title">Research Assistant</p>
-              <p class="item-address">University College London, London</p>
-              <br>
-              <div class="wide">
-                <ul>
-                  <li>     
-                    <div href='#' class="list-link-timeline">     
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true" class="icon-list"></ion-icon>    
-                      <p class="item-address">Internship in collaboration with BBC.</p>
-                    </div>
-                  </li>
-                  <li>     
-                    <div href='#' class="list-link-timeline">     
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true" class="icon-list"></ion-icon>    
-                      <p class="item-address">Objectives: output a structured real-world dataset from industry data otherwise inaccessible to academics; identify optimal metrics to assess proposed recommender systems; develop public engagement activities via challenges and events.</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="timeline-item">
-              <h3 class="item-period">November, 2021</h3>
-              <p class="item-title">2nd Place</p>
-              <p class="item-address">Leonardo Innovathon Hackathon, Rome (Italy)</p>
-              <br>
-              <div class="wide">
-                <ul>
-                  <li>     
-                    <div href='#' class="list-link-timeline">     
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true" class="icon-list"></ion-icon>    
-                      <p class="item-address">A prototype miniature vehicle was created to autonomously intervene in critical infrastructural emergencies, releasing first-aid kits whenever humans are recognised.</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li> -->
-
-          </ul>
-        </div>
-      </section>
-
-
-      <!-- 
-        - #TIMELINE EDUCATION
-      -->
-
-      <section class="section timeline color" id="education" aria-label="timeline">
-        <div class="container">
-          <p class="section-subtitle">Timeline</p>
-          <h2 class="h2 section-title">Education</h2>
-          <ul class="timeline-list">
-
-            <li class="timeline-item">
-              <h3 class="item-period">October, 2020 - December, 2021</h3>
-              <div class="entire-wide">
-                <p class="new-item-title">University College London</p>
-                <p class="new-item-address">Integrated Machine Learning Systems MSc, London</p>
-                <ul>
-                  <li>     
-                    <div href='#' class="new-list-link-timeline">     
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true" class="new-icon-list"></ion-icon>    
-                      <p class="new-item-bullet">The courses focus on data acquisition and analysis, ML technologies, and the infrastructure used to transport, store, secure, and process data.</p>
-                    </div>
-                  </li>
-                  <li>     
-                    <div href='#' class="new-list-link-timeline">     
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true" class="new-icon-list"></ion-icon>    
-                      <p class="new-item-bullet">Title of the Thesis: Deep understanding of AI based Drug Discovery.</p>
-                    </div>
-                  </li>
-                  <li>     
-                    <div href='#' class="new-list-link-timeline">     
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true" class="new-icon-list"></ion-icon>    
-                      <p class="new-item-bullet">Graduated with Distinction. Equivalent Grade Point Average (GPA) score: 4.0.</p>
-                    </div>
-                  </li>
-                  <li>     
-                    <div href='#' class="new-list-link-timeline">     
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true" class="new-icon-list"></ion-icon>    
-                      <p class="new-item-bullet">Achieved the Dean's List award for outstanding academic performance.</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="timeline-item">
-              <h3 class="item-period">September, 2017 - July, 2020</h3>
-              <div class="entire-wide">
-                <p class="new-item-title">University of Genoa</p>
-                <p class="new-item-address">Electronic Engineering and ICT BSc, Genoa</p>
-                <ul>
-                  <li>     
-                    <div href='#' class="new-list-link-timeline">     
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true" class="new-icon-list"></ion-icon>    
-                      <p class="new-item-bullet">Every year, winner of a merit award for being among the top ten percent of students with the highest average grade in the course of study.</p>
-                    </div>
-                  </li>
-                  <li>     
-                    <div href='#' class="new-list-link-timeline">     
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true" class="new-icon-list"></ion-icon>    
-                      <p class="new-item-bullet">Title of the Thesis: A deep generative adversarial approach to image translation with hyperspectral and laser remote sensing data.</p>
-                    </div>
-                  </li>
-                  <li>     
-                    <div href='#' class="new-list-link-timeline">     
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true" class="new-icon-list"></ion-icon>    
-                      <p class="new-item-bullet">Graduated summa cum laude (110 lode/110). Equivalent GPA score: 4.0.</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="timeline-item">
-              <h3 class="item-period">September, 2018 - June, 2020</h3>
-              <div class="entire-wide">
-                <p class="new-item-title">ISSUGE Institute of Excellence</p>
-                <p class="new-item-address">Genoa University Superior School, Genoa</p>
-                <ul>
-                  <li>     
-                    <div href='#' class="new-list-link-timeline">     
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true" class="new-icon-list"></ion-icon>    
-                      <p class="new-item-bullet">Seminars led by leading exponents from the national panorama. All exams passed with distinction.</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="timeline-item">
-              <h3 class="item-period">September, 2017 - June, 2018</h3>
-              <div class="entire-wide">
-                <p class="new-item-title">ISICT Institute of Excellence</p>
-                <p class="new-item-address">Institute of Advance Studies in ICT, Genoa</p>
-                <ul>
-                  <li>     
-                    <div href='#' class="new-list-link-timeline">     
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true" class="new-icon-list"></ion-icon>    
-                      <p class="new-item-bullet">Interdisciplinary courses. Exams passed with honours.</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-      </section>
-
-      <!-- 
-        - #projects
-      -->
-
-      <section class="section news" id="projects" aria-label="news">
-        <div class="container">
-          <p class="section-subtitle">Portfolio</p>
-          <h2 class="h2 section-title">Main Independent Projects</h2>
-          <ul class="has-scrollbar">
-
-            <li class="scrollbar-item">
-              <div class="card news-card">
-                <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
-                  <img src="https://images.unsplash.com/photo-1597575732103-9f6d068cfa9f?auto=format&w=600" width="600" height="675" loading="lazy"
-                    alt="VS Code Gets New JavaScript Debugger" class="img-cover">
-                </figure>
-                <a href="https://edoardogruppi.github.io/Movie_Trailers/#/" target="_blank" class="card-content">
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  <time class="card-text" datetime="2022-09-02">Fall, 2021</time>
-                  <h3 class="h3 card-title">MovieTrailers</h3>
-                </a>
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="card news-card">
-                <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
-                  <img src="https://images.unsplash.com/photo-1590278458425-6aa3912a48a5?auto=format&w=600" width="600" height="675" loading="lazy"
-                    alt="VS Code Gets New JavaScript Debugger" class="img-cover">
-                </figure>
-                <a href="https://edoardogruppi.github.io/Path_Finding_Visualizer/" target="_blank" class="card-content">
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  <time class="card-text" datetime="2022-09-02">Fall, 2021</time>
-                  <h3 class="h3 card-title">Path-finding Algorithms Visualiser</h3>
-                </a>
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="card news-card">
-                <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
-                  <img src="https://images.unsplash.com/photo-1460058418905-d61a1b4a55fe?auto=format&w=600" width="600" height="675" loading="lazy"
-                    alt="VS Code Gets New JavaScript Debugger" class="img-cover">
-                </figure>
-                <a href="https://edoardogruppi.github.io/Sorting_Algorithms_Visualizer/" target="_blank" class="card-content">
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  <time class="card-text" datetime="2022-09-02">Fall, 2021</time>
-                  <h3 class="h3 card-title">Sorting Algorithms Visualiser</h3>
-                </a>
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="card news-card">
-                <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
-                  <img src="https://images.unsplash.com/photo-1640537702474-3e503c21eefc?auto=format&w=600" width="600" height="675" loading="lazy"
-                    alt="VS Code Gets New JavaScript Debugger" class="img-cover">
-                </figure>
-                <a href="https://github.com/EdoardoGruppi/Sudoker" target="_blank" class="card-content">
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  <time class="card-text" datetime="2022-09-02">Summer, 2021</time>
-                  <h3 class="h3 card-title">Sudoku Generator & Solver</h3>
-                </a>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-      </section>
-
-      <!-- 
-        - #CONTACT
-      -->
-
-      <section class="section contact" id="contact" aria-label="contact">
-        <div class="container">
-          <div class="contact-content">
-            <p class="section-subtitle">Contact</p>
-            <h2 class="h2 section-title">Get In Touch</h2>
-
-            <p class="section-text">
-              Please fill out the form to contact me.
-            </p>
-
-            <ul class="contact-list">
-              <li class="contact-item">
-                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
-                <address class="contact-link">
-                  London, UK
-                </address>
+        <section
+          class="section portfolio"
+          id="portfolio"
+          aria-label="portfolio"
+        >
+          <div class="container">
+            <p class="section-subtitle">Portfolio</p>
+            <h2 class="h2 section-title">Relevant Projects</h2>
+            <ul class="has-scrollbar">
+              <li class="scrollbar-item">
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1614846027182-cecfee3a427b?auto=format&w=600"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt="IoT Image"
+                      class="img-cover"
+                    />
+                  </figure>
+                  <a
+                    href="https://github.com/EdoardoGruppi/IoT_Assignment"
+                    target="_blank"
+                    class="card-content"
+                  >
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                    <h3 class="h3 card-title">IoT</h3>
+                    <p class="card-text">Smart Home System</p>
+                  </a>
+                </div>
               </li>
 
-              <li class="contact-item">
-                <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-                <a class="contact-link">(+39) 345-275-2389</a>
+              <li class="scrollbar-item">
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1662731969605-05179bf7653b?auto=format&w=600"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt="Leo Dandora"
+                      class="img-cover"
+                    />
+                  </figure>
+                  <a
+                    href="https://github.com/EdoardoGruppi/AMLS_II_assignment20_21"
+                    target="_blank"
+                    class="card-content"
+                  >
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                    <h3 class="h3 card-title">Applied ML II</h3>
+                    <p class="card-text">Image Enhancement</p>
+                  </a>
+                </div>
               </li>
 
-              <li class="contact-item">
-                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-                <a href="https://mail.google.com/mail/?ui=2&view=cm&fs=1&tf=1&to=edoardogruppi@gmail.com" target="_blank" class="contact-link">edoardogruppi@gmail.com</a>
+              <li class="scrollbar-item">
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1604164448130-d1df213c64eb?auto=format&w=600"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt="Leo Dandora"
+                      class="img-cover"
+                    />
+                  </figure>
+                  <a
+                    href="https://edoardogruppi.wixsite.com/self-driving"
+                    target="_blank"
+                    class="card-content"
+                  >
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                    <h3 class="h3 card-title">Emerging Topics</h3>
+                    <p class="card-text">Self-driving Blog</p>
+                  </a>
+                </div>
               </li>
 
-              <li class="contact-item">
-                <ion-icon name="globe-outline" aria-hidden="true"></ion-icon>
-                <a href="https://edoardogruppi.github.io/Portfolio/" target="_blank" class="contact-link">edoardogruppi.github.io</a>
+              <li class="scrollbar-item">
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1509281373149-e957c6296406?auto=format&w=600"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt="Leo Dandora"
+                      class="img-cover"
+                    />
+                  </figure>
+                  <a
+                    href="https://github.com/EdoardoGruppi/AMLS_assignment20_21"
+                    target="_blank"
+                    class="card-content"
+                  >
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                    <h3 class="h3 card-title">Applied ML I</h3>
+                    <p class="card-text">Object Detection</p>
+                  </a>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1621264448270-9ef00e88a935?auto=format&w=600"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt="Leo Dandora"
+                      class="img-cover"
+                    />
+                  </figure>
+                  <a
+                    href="https://github.com/EdoardoGruppi/DAPS_assignment"
+                    target="_blank"
+                    class="card-content"
+                  >
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                    <h3 class="h3 card-title">Data Processing</h3>
+                    <p class="card-text">Stock Forecasting</p>
+                  </a>
+                </div>
               </li>
             </ul>
           </div>
+        </section>
 
-          <form action='' id='form_id' class="contact-form">
-            <input type="text" id="f_name" aria-label="name" placeholder="Name" required class="input-field">
-            <input type="subject" id="f_subject" aria-label="subject" placeholder="Subject" required
-              class="input-field">
-            <textarea id="f_message" aria-label="message" placeholder="Message" required class="input-field"></textarea>
-            <button class="submit-btn" submit-button>
-              <span class="span">Submit</span>
-              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-            </button>
+        <!-- 
+        - #SKILLS
+      -->
 
-          </form>
-        </div>
-      </section>
-    </article>
-  </main>
+        <section
+          class="section skills has-before"
+          id="skills"
+          aria-label="skills"
+          style="background-image: url('./assets/images/skills-bg.png')"
+        >
+          <div class="container">
+            <div class="skills-content">
+              <p class="section-subtitle">Skills</p>
+              <h2 class="h2 section-title">Programming Skills</h2>
 
-  <!-- 
+              <div class="row">
+                <div class="column">
+                  <img
+                    src="https://user-images.githubusercontent.com/48513387/189545452-25f717cf-6292-4ad2-84c4-a0101e045b92.png"
+                    alt="Python"
+                    class="image-skill"
+                  />
+                  <img
+                    src="https://user-images.githubusercontent.com/48513387/189547166-0c851752-3b56-4585-8a54-dfd48a9ee52c.png"
+                    alt="C#"
+                    class="image-skill"
+                  />
+                  <img
+                    src="https://user-images.githubusercontent.com/48513387/189547224-729131cd-7cfb-43aa-878b-1769429cc6df.png"
+                    alt="MarkDown"
+                    class="image-skill change-my-color"
+                  />
+                  <img
+                    src="https://user-images.githubusercontent.com/48513387/189547235-22efafd8-3474-4166-b640-f96686894977.png"
+                    alt="Java"
+                    class="image-skill"
+                  />
+                  <img
+                    src="https://github.com/EdoardoGruppi/Drug_Design_Models/assets/48513387/19685a2c-177e-4bce-b6be-cb1a5febfd1f"
+                    alt="Typescript"
+                    class="image-skill"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    src="https://user-images.githubusercontent.com/48513387/189546425-8e23e5ce-1afb-42cf-8fbe-186c790975c6.png"
+                    alt="JavaScript"
+                    class="image-skill"
+                  />
+                  <img
+                    src="https://user-images.githubusercontent.com/48513387/189547323-a925274d-deea-42be-8711-bc821a34bfe7.png"
+                    alt="MatLaB"
+                    class="image-skill"
+                  />
+                  <img
+                    src="https://user-images.githubusercontent.com/48513387/189547294-17b8e4c6-7931-4fb5-85c1-c31800516c34.png"
+                    alt="NodeJS"
+                    class="image-skill"
+                  />
+                  <img
+                    src="https://user-images.githubusercontent.com/48513387/189547391-7a0ab20b-cd52-4d53-94e9-119f7ae2f775.png"
+                    alt="SQL"
+                    class="image-skill"
+                  />
+                  <img
+                    src="https://github.com/EdoardoGruppi/Drug_Design_Models/assets/48513387/bf62dedd-207b-47a4-a26c-502cbdf8017f"
+                    alt="Docker"
+                    class="image-skill"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    src="https://user-images.githubusercontent.com/48513387/189546246-2b6bc732-80d3-484a-86dd-1b205e3f77eb.png"
+                    alt="MongoDB"
+                    class="image-skill"
+                  />
+                  <img
+                    src="https://user-images.githubusercontent.com/48513387/189547185-d736d668-ebc9-41d4-9b17-ebf95132e187.png"
+                    alt="CSS"
+                    class="image-skill"
+                  />
+                  <img
+                    src="https://user-images.githubusercontent.com/48513387/189547308-2b5c3863-fdd8-4f78-a45c-fb659970ddcf.png"
+                    alt="React"
+                    class="image-skill"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    src="https://user-images.githubusercontent.com/48513387/189547147-8b62c4d5-d857-47dd-a285-7d79df1b5e78.png"
+                    alt="C"
+                    class="image-skill"
+                  />
+                  <img
+                    src="https://user-images.githubusercontent.com/48513387/189547265-746a30dd-53e9-46ba-ab5c-9bbf514d4cab.png"
+                    alt="HTML"
+                    class="image-skill"
+                  />
+                  <img
+                    src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+                    alt="Git"
+                    class="image-skill change-my-color"
+                  />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg"
+                    alt="Latex"
+                    class="image-skill change-my-color"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="skills-banner has-before"></div>
+          </div>
+        </section>
+
+        <!-- 
+        - #TIMELINE WORKING EXPERIENCE
+      -->
+
+        <section class="section timeline" id="working" aria-label="timeline">
+          <div class="container">
+            <p class="section-subtitle">Timeline</p>
+            <h2 class="h2 section-title">Working Experience</h2>
+            <ul class="timeline-list">
+              <li class="timeline-item">
+                <h3 class="item-period">June, 2023 - ongoing</h3>
+                <div class="entire-wide">
+                  <p class="new-item-title">Software Engineer</p>
+                  <p class="new-item-address">
+                    Italian Institute of Technology, Genoa
+                  </p>
+                  <ul>
+                    <li>
+                      <div href="#" class="new-list-link-timeline">
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                          class="new-icon-list"
+                        ></ion-icon>
+                        <p class="new-item-bullet">
+                          Development of computer tools for research data
+                          management.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div href="#" class="new-list-link-timeline">
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                          class="new-icon-list"
+                        ></ion-icon>
+                        <p class="new-item-bullet">
+                          Bug handling and updating of existing software to
+                          ensure compliance with security standards.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div href="#" class="new-list-link-timeline">
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                          class="new-icon-list"
+                        ></ion-icon>
+                        <p class="new-item-bullet">
+                          Actively developing, integrating, crafting software
+                          and web applications to facilitate research efforts.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="timeline-item">
+                <h3 class="item-period">May, 2022 - October, 2022</h3>
+                <div class="entire-wide">
+                  <p class="new-item-title">Research Assistant</p>
+                  <p class="new-item-address">
+                    University College London, London
+                  </p>
+                  <ul>
+                    <li>
+                      <div href="#" class="new-list-link-timeline">
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                          class="new-icon-list"
+                        ></ion-icon>
+                        <p class="new-item-bullet">
+                          Industrial project in collaboration with
+                          <strong>BBC</strong> and at <strong>BBC</strong>.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div href="#" class="new-list-link-timeline">
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                          class="new-icon-list"
+                        ></ion-icon>
+                        <p class="new-item-bullet">
+                          Pre-processed information collected by BBC to reduce
+                          reidentification risks and privacy concerns without
+                          losing data utility.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div href="#" class="new-list-link-timeline">
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                          class="new-icon-list"
+                        ></ion-icon>
+                        <p class="new-item-bullet">
+                          Created samples exploited by some UCL BEng students
+                          for their thesis and identified optimal metrics to
+                          assess proposed Recommendation Systems.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div href="#" class="new-list-link-timeline">
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                          class="new-icon-list"
+                        ></ion-icon>
+                        <p class="new-item-bullet">
+                          Started a path that may potentially lead to the
+                          release of the dataset in academic environments and to
+                          the development of public engagement through
+                          challenges and events.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #TIMELINE EDUCATION
+      -->
+
+        <section
+          class="section timeline color"
+          id="education"
+          aria-label="timeline"
+        >
+          <div class="container">
+            <p class="section-subtitle">Timeline</p>
+            <h2 class="h2 section-title">Education</h2>
+            <ul class="timeline-list">
+              <li class="timeline-item">
+                <h3 class="item-period">October, 2020 - December, 2021</h3>
+                <div class="entire-wide">
+                  <p class="new-item-title">University College London</p>
+                  <p class="new-item-address">
+                    Integrated Machine Learning Systems MSc, London
+                  </p>
+                  <ul>
+                    <li>
+                      <div href="#" class="new-list-link-timeline">
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                          class="new-icon-list"
+                        ></ion-icon>
+                        <p class="new-item-bullet">
+                          The courses focus on data acquisition and analysis, ML
+                          technologies, and the infrastructure used to
+                          transport, store, secure, and process data.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div href="#" class="new-list-link-timeline">
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                          class="new-icon-list"
+                        ></ion-icon>
+                        <p class="new-item-bullet">
+                          Title of the Thesis: Deep understanding of AI based
+                          Drug Discovery.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div href="#" class="new-list-link-timeline">
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                          class="new-icon-list"
+                        ></ion-icon>
+                        <p class="new-item-bullet">
+                          Graduated with Distinction. Equivalent Grade Point
+                          Average (GPA) score: 4.0.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="timeline-item">
+                <h3 class="item-period">September, 2017 - July, 2020</h3>
+                <div class="entire-wide">
+                  <p class="new-item-title">University of Genoa</p>
+                  <p class="new-item-address">
+                    Electronic Engineering and ICT BSc, Genoa
+                  </p>
+                  <ul>
+                    <li>
+                      <div href="#" class="new-list-link-timeline">
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                          class="new-icon-list"
+                        ></ion-icon>
+                        <p class="new-item-bullet">
+                          Every year, winner of a merit award for being among
+                          the top ten percent of students with the highest
+                          average grade in the course of study.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div href="#" class="new-list-link-timeline">
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                          class="new-icon-list"
+                        ></ion-icon>
+                        <p class="new-item-bullet">
+                          Title of the Thesis: A deep generative adversarial
+                          approach to image translation with hyperspectral and
+                          laser remote sensing data.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div href="#" class="new-list-link-timeline">
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                          class="new-icon-list"
+                        ></ion-icon>
+                        <p class="new-item-bullet">
+                          Graduated summa cum laude (110 lode/110). Equivalent
+                          GPA score: 4.0.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="timeline-item">
+                <h3 class="item-period">September, 2018 - June, 2020</h3>
+                <div class="entire-wide">
+                  <p class="new-item-title">ISSUGE Institute of Excellence</p>
+                  <p class="new-item-address">
+                    Genoa University Superior School, Genoa
+                  </p>
+                  <ul>
+                    <li>
+                      <div href="#" class="new-list-link-timeline">
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                          class="new-icon-list"
+                        ></ion-icon>
+                        <p class="new-item-bullet">
+                          Seminars led by leading exponents from the national
+                          panorama. All exams passed with distinction.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="timeline-item">
+                <h3 class="item-period">September, 2017 - June, 2018</h3>
+                <div class="entire-wide">
+                  <p class="new-item-title">ISICT Institute of Excellence</p>
+                  <p class="new-item-address">
+                    Institute of Advance Studies in ICT, Genoa
+                  </p>
+                  <ul>
+                    <li>
+                      <div href="#" class="new-list-link-timeline">
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                          class="new-icon-list"
+                        ></ion-icon>
+                        <p class="new-item-bullet">
+                          Interdisciplinary courses. Exams passed with honours.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #TIMELINE AWARDS
+      -->
+        <section class="section timeline" id="awards" aria-label="timeline">
+          <div class="container">
+            <p class="section-subtitle">Timeline</p>
+            <h2 class="h2 section-title">Awards</h2>
+            <ul class="timeline-list">
+              <li class="timeline-item">
+                <h3 class="item-period">March, 2022</h3>
+                <div class="entire-wide">
+                  <p class="new-item-title">Dean's List</p>
+                  <p class="new-item-address">
+                    University College London, London
+                  </p>
+                  <ul>
+                    <li>
+                      <div href="#" class="new-list-link-timeline">
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                          class="icon-list"
+                        ></ion-icon>
+                        <p class="new-item-bullet">
+                          For outstanding academic performance in the academic
+                          year 2020/21.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="timeline-item">
+                <h3 class="item-period">November, 2021</h3>
+                <div class="entire-wide">
+                  <p class="new-item-title">Leonardo Innovathon Hackathon</p>
+                  <p class="new-item-address">2nd Place, Rome</p>
+                  <ul>
+                    <li>
+                      <div href="#" class="new-list-link-timeline">
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                          class="icon-list"
+                        ></ion-icon>
+                        <p class="new-item-bullet">
+                          A prototype miniature vehicle was created to
+                          autonomously intervene in critical infrastructural
+                          emergencies, releasing first-aid kits whenever human
+                          profiles are recognised.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #TIMELINE PUBLICATIONS
+      -->
+
+        <section
+          class="section timeline color"
+          id="publications"
+          aria-label="timeline"
+        >
+          <div class="container">
+            <p class="section-subtitle">Timeline</p>
+            <h2 class="h2 section-title">Publications</h2>
+            <ul class="timeline-list">
+              <li class="timeline-item">
+                <h3 class="item-period">September 2023</h3>
+                <div class="entire-wide">
+                  <p class="new-item-title">
+                    Bootstrapped Personalized Popularity for Cold Start
+                    Recommender Systems
+                  </p>
+                  <p class="new-item-address">
+                    University College London, London
+                  </p>
+                  <ul>
+                    <li>
+                      <div href="#" class="new-list-link-timeline">
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                          class="new-icon-list"
+                        ></ion-icon>
+                        <p class="new-item-bullet">
+                          Iason Chaimalas, Duncan Martin Walker, Edoardo Gruppi,
+                          Benjamin Richard Clark, and Laura Toni. In Proceedings
+                          of the 17th ACM Conference on Recommender Systems
+                          (RecSys &apos;23). Association for Computing
+                          Machinery, New York, NY, USA, 715&dash;722.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div href="#" class="new-list-link-timeline">
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                          class="new-icon-list"
+                        ></ion-icon>
+                        <p class="new-item-bullet">
+                          <a
+                            href="https://doi.org/10.1145/3604915.3608820"
+                            target="_blank"
+                            >Link: https://doi.org/10.1145/3604915.3608820</a
+                          >
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #projects
+      -->
+
+        <section class="section news" id="projects" aria-label="news">
+          <div class="container">
+            <p class="section-subtitle">Portfolio</p>
+            <h2 class="h2 section-title">Main Independent Projects</h2>
+            <ul class="has-scrollbar">
+              <li class="scrollbar-item">
+                <div class="card news-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1597575732103-9f6d068cfa9f?auto=format&w=600"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt="VS Code Gets New JavaScript Debugger"
+                      class="img-cover"
+                    />
+                  </figure>
+                  <a
+                    href="https://edoardogruppi.github.io/Movie_Trailers/#/"
+                    target="_blank"
+                    class="card-content"
+                  >
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                    <time class="card-text" datetime="2022-09-02"
+                      >Fall, 2021</time
+                    >
+                    <h3 class="h3 card-title">MovieTrailers</h3>
+                  </a>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="card news-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1590278458425-6aa3912a48a5?auto=format&w=600"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt="VS Code Gets New JavaScript Debugger"
+                      class="img-cover"
+                    />
+                  </figure>
+                  <a
+                    href="https://edoardogruppi.github.io/Path_Finding_Visualizer/"
+                    target="_blank"
+                    class="card-content"
+                  >
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                    <time class="card-text" datetime="2022-09-02"
+                      >Fall, 2021</time
+                    >
+                    <h3 class="h3 card-title">
+                      Path-finding Algorithms Visualiser
+                    </h3>
+                  </a>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="card news-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1460058418905-d61a1b4a55fe?auto=format&w=600"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt="VS Code Gets New JavaScript Debugger"
+                      class="img-cover"
+                    />
+                  </figure>
+                  <a
+                    href="https://edoardogruppi.github.io/Sorting_Algorithms_Visualizer/"
+                    target="_blank"
+                    class="card-content"
+                  >
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                    <time class="card-text" datetime="2022-09-02"
+                      >Fall, 2021</time
+                    >
+                    <h3 class="h3 card-title">Sorting Algorithms Visualiser</h3>
+                  </a>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="card news-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1640537702474-3e503c21eefc?auto=format&w=600"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt="VS Code Gets New JavaScript Debugger"
+                      class="img-cover"
+                    />
+                  </figure>
+                  <a
+                    href="https://github.com/EdoardoGruppi/Sudoker"
+                    target="_blank"
+                    class="card-content"
+                  >
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                    <time class="card-text" datetime="2022-09-02"
+                      >Summer, 2021</time
+                    >
+                    <h3 class="h3 card-title">Sudoku Generator & Solver</h3>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #CONTACT
+      -->
+
+        <section class="section contact" id="contact" aria-label="contact">
+          <div class="container">
+            <div class="contact-content">
+              <p class="section-subtitle">Contact</p>
+              <h2 class="h2 section-title">Get In Touch</h2>
+
+              <p class="section-text">
+                Please fill out the form to contact me.
+              </p>
+
+              <ul class="contact-list">
+                <li class="contact-item">
+                  <ion-icon
+                    name="location-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+                  <address class="contact-link">London, UK</address>
+                </li>
+
+                <li class="contact-item">
+                  <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                  <a
+                    href="https://mail.google.com/mail/?ui=2&view=cm&fs=1&tf=1&to=edoardogruppi@gmail.com"
+                    target="_blank"
+                    class="contact-link"
+                    >edoardogruppi@gmail.com</a
+                  >
+                </li>
+
+                <li class="contact-item">
+                  <ion-icon name="globe-outline" aria-hidden="true"></ion-icon>
+                  <a
+                    href="https://edoardogruppi.github.io/Portfolio/"
+                    target="_blank"
+                    class="contact-link"
+                    >edoardogruppi.github.io</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <form action="" id="form_id" class="contact-form">
+              <input
+                type="text"
+                id="f_name"
+                aria-label="name"
+                placeholder="Name"
+                required
+                class="input-field"
+              />
+              <input
+                type="subject"
+                id="f_subject"
+                aria-label="subject"
+                placeholder="Subject"
+                required
+                class="input-field"
+              />
+              <textarea
+                id="f_message"
+                aria-label="message"
+                placeholder="Message"
+                required
+                class="input-field"
+              ></textarea>
+              <button class="submit-btn" submit-button>
+                <span class="span">Submit</span>
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
     - #FOOTER
   -->
 
-  <footer class="footer">
-    <div class="container">
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2022. Website inspired by
+          <a
+            href="https://github.com/codewithsadee/smith-portfolio"
+            target="_blank"
+            class="copyright-link"
+            >codewithsadee.</a
+          >
+        </p>
 
-      <p class="copyright">
-        &copy; 2022. Website inspired by <a href="https://github.com/codewithsadee/smith-portfolio" target="_blank" class="copyright-link">codewithsadee.</a>
-      </p>
+        <ul class="social-list">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/edoardogruppi/"
+              target="_blank"
+              class="social-link"
+            >
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
 
-      <ul class="social-list">
+          <li>
+            <a
+              href="https://github.com/EdoardoGruppi"
+              target="_blank"
+              class="social-link"
+            >
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
 
-        <li>
-          <a href="https://www.linkedin.com/in/edoardogruppi/" target="_blank" class="social-link">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-        </li>
+          <li>
+            <a
+              href="https://mail.google.com/mail/?ui=2&view=cm&fs=1&tf=1&to=edoardogruppi@gmail.com"
+              target="_blank"
+              class="social-link"
+            >
+              <ion-icon name="mail"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
-        <li>
-          <a href="https://github.com/EdoardoGruppi" target="_blank" class="social-link">
-            <ion-icon name="logo-github"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="https://mail.google.com/mail/?ui=2&view=cm&fs=1&tf=1&to=edoardogruppi@gmail.com" target="_blank" class="social-link">
-            <ion-icon name="mail"></ion-icon>
-          </a>
-        </li>
-
-      </ul>
-    </div>
-  </footer>
-
-  <!-- 
+    <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
 
-  <!-- 
+    <!-- 
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
